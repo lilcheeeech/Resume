@@ -7,33 +7,41 @@
     <meta name="keywords" content="Frontend, resume, first job , html,css">
     <meta name="discription" content="Этот сайт- первое резюме начинающего Frontend- разработчика Александра Лучина">
     <title>Резюме/Портфолио</title>
+    <link rel="stylesheet" href="стилистика.css">
 </head>
 <body>
-<header class="header">
-    
-<img src="avatar.jpg" alt="Александр Лучин" width="200">
+<div class="container">
+   <header class="header">
+<img src="avatar.jpg" alt="Александр Лучин" class="avatar">
+<div class="info-text">
 <h2>Александр Лучин</h2>
-<p>Я - школьник, который изо всех сил <strong>старается</strong> , <em>чтобы научиться чему-то новому</em> и <strong>найти первую работу</strong></p>
+<p>Я - школьник, который изо всех сил <strong>старается</strong> , <em>чтобы научиться чему-то новому</em> и <strong>найти первую работу.</strong></p>
 <p>Мне нравится играть в баскетбол, гулять с друзьями, но больше всего я люблю <strong>узнавать что-то новое и программировать</strong></p>
 </header>
+
+<br>
+<div class="card-2">
 <div id="Block2" class="card header">
 <h4>Список социальных сетей:</h4>
 
 <a href="https://t.me/lilcheeech" target="_blank">Telegram</a>
 <br>
 <a href="https://vk.com/lucchka" target="_blank">Vk</a>
-
 </div>
+</div>
+</div>
+<br>
+<div class="card-3">
 <div id="Block3">
 <h2>Мои хобби :</h2>
 
 <ol>
+<li>Программирование</li>
 <li>баскетбол</li>
 <li>Игра на гитаре</li>
 <li>Пение</li>
-<li>Программирование</li>
 </ol>
-
+</div>
 <h2>Опыт работы</h2>
 
 <table  width="500">
@@ -83,33 +91,37 @@
                 </tfoot> 
 </table>
 <br>
+
 </div>
 
-
+<br>
+<div class="card-4">
 <footer id="footer">
-<h1>Свяжитесь со мной</h1>
-    <form >
+
+    <form action="/" class="form">
+        <h2>Свяжитесь со мной</h2>
+        <div class="form-row">
         <section>
-        <article>
+        <article class="f">
 <label for="text">Ваше имя</label>
 <input type="text" id="text" placeholder="Введите имя">
 </article>
-<br>
-<article>
+<article class="f">
 <label for="email"> Ваш email</label>
 <input type="email" id="email" placeholder="Введите email">
 </article>
-<br>
-<article>
+</div>
+<article class="f">
 <label for="message"> Ваше сообщение</label>
-<br>
 <textarea id="message" placeholder="Введите сообщение"></textarea>
 </article>
 </section>
-<!-- <input type="sumbit" value="Отправить форму">
- -->
-<button>Отправить форму </button>
+ <!-- <input class="btn" type="sumbit" value="Отправить форму"> -->
+<button class="btn">Отправить форму </button>
     </form>
 </footer>
+</div>
+</div>
+</div>
 </body>
 </html>
